@@ -108,38 +108,23 @@ function guess(btn){
   if(!gamePlaying){
     return;
   }
-  if(btn == pattern[guessCounter]) {
-    // if last turn of the round has been reached:
-    if(guessCounter == progress) {
-      // if this is the last round, win game.
-      if(progress == pattern.length - 1) {
-        winGame();
-      } 
-      // if there are more rounds, play next clue sequence.
-      else {
-        progress++;
-        playClueSequence();
-      }
-    } 
-    // if there are still more turns in the round, continue round.
-    else {
-      guessCounter++;
-    }
-  } else {
+  // If guess is incorrect, lose game.
+  if(btn != pattern[guessCounter]) {
     loseGame();
   }
-  // if(btn != pattern[guessCounter]) {
-  //   loseGame();
-  // }
-  // if(guessCounter < progress) {
-  //   guessCounter++;
-  // } else {
-  //   progress++;
-  //   playClueSequence();
-  // }
-  // if(progress == pattern.length) {
-  //   winGame();
-  // }
+  // If there are more turns in the round, continue round.
+  if(guessCounter < progress) {
+    guessCounter++;
+  } 
+  // If this is the last turn in the round, play next clue sequence.
+  else {
+    progress++;
+    playClueSequence();
+  }
+  // If this is the last round, win game.
+  if(progress == pattern.length) {
+    winGame();
+  }
   
 }
 

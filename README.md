@@ -40,7 +40,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![](codepath.gif)
+![](https://github.com/annishao/Codepath_SITE/blob/main/codepath.gif)
 
 
 ## Reflection Questions
@@ -51,10 +51,12 @@ Here's a walkthrough of implemented user stories:
    [Dark/Light mode](https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp)
    
    [JavaScript Random](https://www.w3schools.com/js/js_random.asp)
+   
+   [Writing Clean Code](https://wpshout.com/unconditionally-refactoring-nested-statements-cleaner-code/)
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 
-   I struggled between choosing better readability or clean control flow when writing the guess function for this submission. After I wrote the guess function on my own, I checked my code with the version provided and I was shocked by how different they looked. While my version had less lines of code, I felt like the version provided looked cleaner since everything was separated into different branches. I was conflicted: my code looked simpler, but to a developer reading my code for the first time, would my logic be more difficult to grasp?
+   After I wrote the guess function on my own, I checked my code with the version provided and I was shocked by how different they looked. While my version had less lines of code, I felt like the version provided looked cleaner since everything was separated into different branches. I was conflicted: my code looked simpler, but to a developer reading my code for the first time, would my logic be more difficult to grasp? I turned to the internet, hoping to get a clear answer on which code format is preferred. After googling, I found an article (last link for question 1) and learned that my implementation was known as gateway logic checking since the code progresses step by step, whereas the provided implementation is known as bubble style since many code executions were hidden in many bubbles of if statements. I learned that bubble style makes the control flow more complicated and is not a favored way of writing code. Thus, I was able to resolve my conflict by researching good coding habits and following their advice. I stuck with my own implementation of the guess method over what was provided. Ultimately, I am glad to have encountered this challenge. Avoiding nested statements is an instance of good coding style that transcends all coding languages. I will take what I have learned from this and apply it to projects in the future.
 
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
