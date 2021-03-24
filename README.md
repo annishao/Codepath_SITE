@@ -40,7 +40,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![](codepath.gif)
+![](https://github.com/annishao/Codepath_SITE/blob/main/codepath.gif)
 
 
 ## Reflection Questions
